@@ -1,0 +1,239 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@email.com",
+      "age": 28,
+      "address": {
+        "street": "123 Main Street",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001",
+        "country": "USA"
+      },
+      "phone": "+1-555-0123",
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2023-01-15T08:30:00Z",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "email": "sarah.johnson@email.com",
+      "age": 32,
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zipCode": "90210",
+        "country": "USA"
+      },
+      "phone": "+1-555-0456",
+      "role": "user",
+      "isActive": true,
+      "createdAt": "2023-02-20T14:45:00Z",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "email": "michael.brown@email.com",
+      "age": 25,
+      "address": {
+        "street": "789 Pine Road",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60601",
+        "country": "USA"
+      },
+      "phone": "+1-555-0789",
+      "role": "moderator",
+      "isActive": false,
+      "createdAt": "2023-03-10T10:15:00Z",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation",
+      "price": 199.99,
+      "category": "Electronics",
+      "brand": "AudioTech",
+      "inStock": true,
+      "quantity": 45,
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400"
+      ],
+      "rating": 4.5,
+      "reviews": 128,
+      "tags": ["wireless", "audio", "headphones"],
+      "createdAt": "2023-01-05T12:00:00Z"
+    },
+    {
+      "id": 102,
+      "name": "Smartphone Pro",
+      "description": "Latest smartphone with advanced camera and 5G connectivity",
+      "price": 899.99,
+      "category": "Electronics",
+      "brand": "TechCorp",
+      "inStock": true,
+      "quantity": 23,
+      "images": [
+        "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+        "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"
+      ],
+      "rating": 4.8,
+      "reviews": 342,
+      "tags": ["smartphone", "5G", "camera"],
+      "createdAt": "2023-02-15T16:30:00Z"
+    },
+    {
+      "id": 103,
+      "name": "Gaming Laptop",
+      "description": "High-performance gaming laptop with RTX graphics",
+      "price": 1299.99,
+      "category": "Computers",
+      "brand": "GameMaster",
+      "inStock": false,
+      "quantity": 0,
+      "images": [
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400"
+      ],
+      "rating": 4.3,
+      "reviews": 89,
+      "tags": ["gaming", "laptop", "RTX"],
+      "createdAt": "2023-03-01T09:45:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-001",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 101,
+          "quantity": 1,
+          "price": 199.99
+        },
+        {
+          "productId": 102,
+          "quantity": 1,
+          "price": 899.99
+        }
+      ],
+      "totalAmount": 1099.98,
+      "status": "delivered",
+      "shippingAddress": {
+        "street": "123 Main Street",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001",
+        "country": "USA"
+      },
+      "orderDate": "2023-03-15T14:20:00Z",
+      "deliveryDate": "2023-03-20T10:30:00Z"
+    },
+    {
+      "id": "ORD-002",
+      "userId": 2,
+      "items": [
+        {
+          "productId": 103,
+          "quantity": 1,
+          "price": 1299.99
+        }
+      ],
+      "totalAmount": 1299.99,
+      "status": "processing",
+      "shippingAddress": {
+        "street": "456 Oak Avenue",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zipCode": "90210",
+        "country": "USA"
+      },
+      "orderDate": "2023-03-25T11:15:00Z",
+      "deliveryDate": null
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting Started with React Hooks",
+      "content": "React Hooks have revolutionized the way we write functional components...",
+      "author": {
+        "id": 1,
+        "name": "John Doe",
+        "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+      },
+      "category": "Tutorial",
+      "tags": ["React", "Hooks", "JavaScript"],
+      "likes": 156,
+      "comments": 23,
+      "views": 1240,
+      "published": true,
+      "createdAt": "2023-03-10T08:00:00Z",
+      "updatedAt": "2023-03-12T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Building RESTful APIs with Node.js",
+      "content": "In this comprehensive guide, we'll explore how to create robust APIs...",
+      "author": {
+        "id": 2,
+        "name": "Sarah Johnson",
+        "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      "category": "Backend",
+      "tags": ["Node.js", "API", "Express"],
+      "likes": 89,
+      "comments": 12,
+      "views": 876,
+      "published": true,
+      "createdAt": "2023-03-18T14:45:00Z",
+      "updatedAt": "2023-03-18T14:45:00Z"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "TechCorp Solutions",
+      "industry": "Technology",
+      "employees": 500,
+      "founded": 2010,
+      "headquarters": {
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+      },
+      "website": "https://techcorp.com",
+      "revenue": 50000000,
+      "isPublic": true,
+      "description": "Leading provider of enterprise software solutions"
+    },
+    {
+      "id": 2,
+      "name": "Creative Designs Inc",
+      "industry": "Design",
+      "employees": 120,
+      "founded": 2015,
+      "headquarters": {
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA"
+      },
+      "website": "https://creativedesigns.com",
+      "revenue": 8500000,
+      "isPublic": false,
+      "description": "Full-service digital design agency"
+    }
+  ]
+}
